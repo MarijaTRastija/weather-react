@@ -3,30 +3,30 @@ import "./Weather.css";
 
 export default function Weather() {
   return (
-    <div class="container">
-      <div class="weather-app-wrapper">
-        <div class="weather-app">
-          <form id="search-form" class="mb-3">
-            <div class="row">
-              <div class="col-9">
+    <div className="container">
+      <div className="weather-app-wrapper">
+        <div className="weather-app">
+          <form id="search-form" className="mb-3">
+            <div className="row">
+              <div className="col-9">
                 <input
                   type="search"
                   placeholder="Type a city..."
-                  class="form-control"
+                  className="form-control"
                   id="city-input"
                   autocomplete="off"
                 />
               </div>
-              <div class="col-3">
+              <div className="col-3">
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  className="btn btn-primary w-100"
                 />
               </div>
             </div>
           </form>
-          <div class="overview">
+          <div className="overview">
             <h1 id="city">Zagreb</h1>
             <ul>
               <li>
@@ -35,22 +35,22 @@ export default function Weather() {
               <li id="description">Sunny</li>
             </ul>
           </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="clearfix weather-temperature">
+          <div className="row">
+            <div className="col-6">
+              <div className="clearfix weather-temperature">
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                   alt="Sunny"
                   id="icon"
-                  class="float-left"
+                  className="float-left"
                 />
-                <div class="float-left">
+                <div className="float-left">
                   <strong id="temperature">32</strong>
-                  <span class="units"> °C </span>
+                  <span className="units"> °C </span>
                 </div>
               </div>
             </div>
-            <div class="col-6">
+            <div className="col-6">
               <ul>
                 <li>
                   Humidity: <span id="humidity">62</span>%
@@ -61,82 +61,82 @@ export default function Weather() {
               </ul>
             </div>
           </div>
-          <div class="row">
-            <div class="weather-forecast" id="forecast"></div>
-            <div class="card-group">
-              <div class="col">
-                <div class="card">
-                  <small class="text-muted">Wed</small>
+          <div className="row">
+            <div className="weather-forecast" id="forecast"></div>
+            <div className="card-group">
+              <div className="col">
+                <div className="card">
+                  <small className="text-muted">Wed</small>
                   <img
                     src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                    class="card-img-top"
+                    className="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <p class="card-text">2°C /</p>
+                  <div className="card-body">
+                    <p className="card-text">2°C /</p>
 
-                    <h5 class="card-title">9°C</h5>
-                    <p class="card-text"></p>
+                    <h5 className="card-title">9°C</h5>
+                    <p className="card-text"></p>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <small class="text-muted">Thu</small>
+              <div className="col">
+                <div className="card">
+                  <small className="text-muted">Thu</small>
                   <img
                     src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                    class="card-img-top"
+                    className="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <p class="card-text">5°C /</p>
-                    <h5 class="card-title">15°C</h5>
-                    <p class="card-text"></p>
+                  <div className="card-body">
+                    <p className="card-text">5°C /</p>
+                    <h5 className="card-title">15°C</h5>
+                    <p className="card-text"></p>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <small class="text-muted">Fri</small>
+              <div className="col">
+                <div className="card">
+                  <small className="text-muted">Fri</small>
                   <img
                     src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                    class="card-img-top"
+                    className="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <p class="card-text">6°C /</p>
-                    <h5 class="card-title">18°C</h5>
-                    <p class="card-text"></p>
+                  <div className="card-body">
+                    <p className="card-text">6°C /</p>
+                    <h5 className="card-title">18°C</h5>
+                    <p className="card-text"></p>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <small class="text-muted">Sat</small>
+              <div className="col">
+                <div className="card">
+                  <small className="text-muted">Sat</small>
                   <img
                     src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                    class="card-img-top"
+                    className="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <p class="card-text">8°C /</p>
-                    <h5 class="card-title">16°C</h5>
-                    <p class="card-text"></p>
+                  <div className="card-body">
+                    <p className="card-text">8°C /</p>
+                    <h5 className="card-title">16°C</h5>
+                    <p className="card-text"></p>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card">
-                  <small class="text-muted">Sun</small>
+              <div className="col">
+                <div className="card">
+                  <small className="text-muted">Sun</small>
                   <img
                     src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                    class="card-img-top"
+                    className="card-img-top"
                     alt="..."
                   />
-                  <div class="card-body">
-                    <p class="card-text">7°C /</p>
-                    <h5 class="card-title">14°C</h5>
-                    <p class="card-text"></p>
+                  <div className="card-body">
+                    <p className="card-text">7°C /</p>
+                    <h5 className="card-title">14°C</h5>
+                    <p className="card-text"></p>
                   </div>
                 </div>
               </div>
