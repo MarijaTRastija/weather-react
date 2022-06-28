@@ -152,7 +152,14 @@ export default function Weather() {
         >
           Open source code
         </a>{" "}
-        by Marija Tržić Rastija
+        by Marija Tržić Rastija, hosted on{" "}
+        <a
+          href="https://dulcet-creponne-cb40c0.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
+        </a>
       </small>
     </div>
   );
